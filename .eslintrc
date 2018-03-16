@@ -1,0 +1,47 @@
+{
+  "extends": [
+     "airbnb",
+     "plugin:jsx-a11y/recommended"
+  ],
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "react/no-typos": 0,
+    "import/no-named-as-default": 0,
+    "import/prefer-default-export": 0,
+    "react/jsx-uses-react": "error",
+    "react/prefer-stateless-function": [1],
+    "react/jsx-uses-vars": "error",
+    "react/forbid-prop-types": [1, { "forbid": ["any"] }],
+    "react/no-array-index-key": 0,
+    "linebreak-style": 0,
+    "quotes": [2, "single", "avoid-escape"],
+    "arrow-body-style": 0,
+    "quote-props": [2, "as-needed", { "keywords": true }],
+    "no-param-reassign": ["error", {"props": false}],
+    "import/no-extraneous-dependencies": [2, {"devDependencies": true}],
+    "object-shorthand": 1,
+    "no-unused-vars": [2, {
+      "args": "after-used",
+      "argsIgnorePattern": "^_$"
+    }],
+    "comma-dangle": 0,
+    "function-paren-newline": 0
+  },
+  "plugins": [
+    "react",
+    "jsx-a11y"
+  ]
+}
